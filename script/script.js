@@ -120,13 +120,13 @@ function cambiarIdioma(){
         console.log('ojooooo');
         // eng.style.opacity = 0;
         esp.style.opacity = 1;
-        location.href = "eng/index.html";
+        location.href = "eng/";
         
     } else {
         console.log('letsgo');
         eng.style.opacity = 1;
         // esp.style.opacity = 0;
-        location.href="../index.html";
+        location.href="../";
     };
 }
 
