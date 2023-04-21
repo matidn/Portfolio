@@ -1,0 +1,435 @@
+.container-anim {
+    display: flex;
+    flex-direction: column;
+
+
+    #about {
+        background: $blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        padding-bottom: 2rem;
+
+        .container-about {
+            display: flex;
+            flex-direction: column;
+            
+
+
+            .title-section {
+                color: $white;
+                display: inline;
+                padding: 2rem 1rem;
+                justify-content: center;
+                align-items: center;
+                
+                margin-top: 1rem;
+
+                h2{
+                    border-bottom: 1px solid $white;
+                }
+            }
+            .text-about {
+                display: flex;
+                flex-direction: column;
+                max-width: 85vw;
+                margin-bottom: 10rem;
+                padding: 0 5vw;
+                
+                p {
+                    font-family: 'Jost', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: $white;
+
+                    margin: 0.5rem;
+                }
+            }
+
+            
+        }
+        img{
+            max-width: 550px;
+            max-height: 550px;
+        }
+
+        
+        svg{
+            position: absolute;
+            bottom: 0;
+            
+        }
+    }
+
+    #skills{
+        
+        background-color: #D9DBF1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .title-section{
+            display: flex;
+            justify-content: center;
+
+            h2{
+                font-family: 'Jost', cursive;
+                color: $black;
+            }
+        }
+        .skills-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
+            gap: 6rem;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+                background-color: $lightBlue;
+                
+
+                img{
+                    width: 75px;
+                    height: auto;
+                    max-width: 100%;
+                    margin-bottom: 10px;
+
+                }
+                p{
+                    font-family: 'Righteous', sans-serif;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+
+    #projects {
+        .svg-projects{
+            position: absolute;
+            top: 0;
+        }
+        position: relative;
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        .title-section {
+            display: flex;
+            margin-top: 15rem;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                color: $white;
+            }
+        }
+        .projects-gallery{
+            display: grid;
+            grid-auto-rows: 15rem;
+            grid-template-columns: repeat(auto-fill, minmax( 300px, 1fr));
+            
+            padding: 2rem;
+            gap: 2rem;
+
+            .project{
+                position: relative;
+                
+                img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: 0.3s;
+                    
+                    border: 0.5px solid ;
+                }
+                h3{
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 300;
+                    padding-left: 1rem;
+                    opacity: 1;
+                    transition: 0.3s;
+                    color: $white;
+                }
+
+                .project-inside{
+                    position: absolute;
+                    display: none;
+                    top: 10%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: max-content;
+
+                    h4{
+                        font-family: 'Jost', sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                        
+                        
+                        transition: 0.3s;
+                        color: $white;
+                        text-align: center;
+                    }
+                    .project-links{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        a{
+                            text-decoration: none;
+                            border: 1px solid $white;
+                            transition: 0.3s;
+                            
+                            p{
+                                margin: .5rem;
+                                text-align: center;
+                                color: $white;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .project:hover{
+
+                img{
+                    filter: brightness(20%);
+                }
+                h3{
+                    opacity: 0;
+                }
+
+                .project-inside{
+                    display: block;
+
+                    .project-links{
+                        a:hover{
+                            background-color: $white;
+                            p{
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #contact {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: $black;
+
+        .contact-wave{
+            z-index: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .contact-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding-top: 30vh;
+            height: 85vh;
+
+            .title-section {
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                padding-left: 20px;
+                
+                h2 {
+                    color: $white;
+                    font-family: 'Jost', sans-serif;
+                    
+                }
+                p{
+                    color: $white;
+                    font-size: 20px;
+                    padding-right: 1rem;
+                }
+            }
+
+            .message-section{
+
+                width: 75vw;
+                padding: 0 2rem;
+                .form{
+                    border: 2px solid transparent;
+                    color: $white;
+                    font-family: 'Quicksand', sans-serif;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+    
+                    .name-email{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        width: 100%;
+                    }
+    
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+            
+                        label{
+                            font-size: 14px;
+                            mix-blend-mode: difference;
+                        }
+            
+                        input{
+                            position: relative;
+                            margin-top: 10px;
+                            padding: 8px 10px;
+            
+                            color: #FFF;
+                            background-color: #363636;
+                            box-shadow: none;
+                            border: 1px solid #363636;
+                            transition: .5s;
+                            
+                            
+                            &:focus-visible{
+                                border: 1px solid $blue;
+                                outline: none;
+
+                                box-shadow: 4px 4px 0px 1px $blue;
+                    -webkit-box-shadow: 4px 4px 0px 1px $blue;
+                        -moz-box-shadow: 4px 4px 0px 1px $blue;
+                            }
+                        }
+                        input[type="text"], input[type="email"], textarea[type="text" ]{
+                            font-family: 'Quicksand', sans-serif;
+                        }
+    
+                        #message{
+                            z-index: 5;
+                            margin-top: 10px;
+                            padding: 8px 10px;
+                            width: 100%;
+                            height: 15vh;
+                            color: #FFF;
+                            background-color: #363636;
+                            box-shadow: none;
+                            border: 1px solid #363636;
+                            resize: none;
+                            transition: .5s;
+
+                            &:focus-visible{
+                                border: 1px solid $blue;
+                                outline: none;
+
+                                box-shadow: 5px 5px 0px 1px $blue;
+                    -webkit-box-shadow: 5px 5px 0px 1px $blue;
+                        -moz-box-shadow: 5px 5px 0px 1px $blue;
+                            }
+                        }
+                    }
+                    button{
+                        margin: 15px 0;
+                        padding: 5px 65px;
+                        font-size: 16px;
+                        font-family: 'Quicksand', sans-serif;
+                        background: transparent;
+                        color: $white;
+                        border: 2px solid $white;
+                        background: #181818;
+                        transition: 0.3s;
+                        mix-blend-mode: difference;
+                    }
+                    button:active{
+                        background: $blue;
+                    }
+                    button:hover{
+                        cursor: pointer;
+                        border: 2px solid $blue;
+                        box-shadow: 5px 5px 0px 1px $blue;
+                    -webkit-box-shadow: 5px 5px 0px 1px $blue;
+                        -moz-box-shadow: 5px 5px 0px 1px $blue;
+                    }
+                
+                }
+            
+            }
+        }
+
+        
+        
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container-anim #contact .contact-container{
+        flex-direction: column;
+        height: auto;
+        padding-top: 11vh;
+
+        h2 {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .message-section{
+            padding: 2rem  0;
+        }
+    }
+
+    
+}
+@media screen and (max-width: 600px){
+    
+    .container-anim{
+
+        #about {
+            .container-about {
+
+                .text-about {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        #contact{
+            .contact-container{
+    
+                .message-section{
+                    padding: 2rem 0;
+        
+                    p{
+                        font-size: 16px;
+                    }
+                    .form{
+                        .name-email{
+                            flex-direction: column;
+                        }
+                    } 
+                } 
+            } 
+        }
+    }  
+}
+

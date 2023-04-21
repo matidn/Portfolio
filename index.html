@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon_io (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon_io (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon_io (1)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Portafolio</title>
+</head>
+
+<body onload="move()">
+    <div id="preloader">
+        <div class="progress">
+            <div id="bar">
+                <div id="barconfrm"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroller" data-simplebar>
+        <section id="home">
+            <h1>Matías De Nardo</h1>
+            <h2>Desarrollador Front-End</h2>
+            <button type="button" class="example-switchbox is-pressed" id="switchbox_V2VVB" aria-pressed="false" title="Translate to english">
+                <img src="images/icons/icons8-translation-30 (1).png" alt="translate icon">
+                <span class="example-switchbox-no">Eng</span>
+                
+            </button>
+
+            <a class="arrow-down" href="#about">
+                <svg class="arrow" fill="#D9DBF1" height="79px" width="79px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#221E22" stroke-width="0.0033"
+                    transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path id="XMLID_225_"
+                            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </section>
+
+        <div class="container-anim">
+            <section id="about">
+
+                <div class="container-about">
+                    <div class="title-section about-title">
+                        <h2>SOBRE MI</h2>
+                    </div>
+                    <div class="text-about">
+                        <p>
+                            Soy un desarrollador Front-End con sede en Buenos Aires, Argentina. 
+                        </p>
+                        <p>
+                            Me inicié en el mundo de la programación en inicios del 2021, utilizando videos de Internet y cursos en línea para
+                            aprender HTML, CSS, SASS y JavaScript.
+                        </p>
+                        <p>
+                            Me apasiona el desafío de aprender constantemente y encontrar nuevas formas de resolver
+                            problemas. Disfruto especialmente de la satisfacción que conlleva encontrar la solución a un
+                            problema que ha surgido en un proyecto.
+                        </p>
+                        <p>
+                            En mi tiempo libre, me gusta escuchar música de diversos géneros, ver películas, pasar
+                            tiempo con mis amigos y jugar al baloncesto y al fútbol.
+                        </p>
+            
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D9DBF1" fill-opacity="1" d="M0,288L80,272C160,256,320,224,480,229.3C640,235,800,277,960,266.7C1120,256,1280,192,1360,160L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </section>
+
+            <section id="skills">
+                <div class="title-section">
+                    <h2>Habilidades</h2>
+                </div>
+                <div class="skills-container">
+                    <div>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                        <p>Sass</p>
+                    </div>
+                    <div>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <p>JavaScript</p>
+                    </div> 
+                </div>
+            </section>
+
+
+            <section id="projects">
+                <svg class="svg-projects" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D9DBF1" fill-opacity="1" d="M0,0L80,37.3C160,75,320,149,480,154.7C640,160,800,96,960,80C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+                <div class="title-section">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="projects-gallery">
+                    <div class="project 1">
+                        <img src="images/projects/project-cooltimer.png" alt="Cool Timer">
+                        <div class="project-inside">
+                            <h4>Cool Timer</h4>
+                            <div class="project-links">
+                                <a href="https://matidn.github.io/cooltimer/" target="_blank"><p>Visitar</p></a>
+                                <a href="https://github.com/matidn/cooltimer" target="_blank"><p>Repositorio</p></a>
+                            </div>
+                        </div>
+                        <h3>Cool Timer</h3>
+                        
+                        
+                    </div>
+                    <div class="project 2">
+                        <img src="images/projects/project-ecommerce-product-page.png" alt="e-commerce">
+                        <div class="project-inside">
+                            <h4>E-commerce product page</h4>
+                            <div class="project-links">
+                                <a href="https://matidn.github.io/E-commerce-product-page/" target="_blank"><p>Visitar</p></a>
+                                <a href="https://github.com/matidn/E-commerce-product-page" target="_blank"><p>Repositorio</p></a>
+                            </div>
+                        </div>
+                        <h3>E-commerce product page</h3>
+                    </div>
+                    <div class="project 3">
+                        <img src="images/projects/project-kanyetimeline.png" alt="kanye West landing page">
+                        <div class="project-inside">
+                            <h4>Kanye West Timeline</h4>
+                            <div class="project-links">
+                                <a href="https://matidn.github.io/kanyetimeline/" target="_blank"><p>Visitar</p></a>
+                                <a href="https://github.com/matidn/kanyetimeline" target="_blank"><p>Repositorio</p></a>
+                            </div>
+                        </div>
+                        <h3>Kanye West Timeline</h3>
+                    </div>
+                    <div class="project 4">
+                        <img src="images/projects/project-simplecalculator.png" alt="Simple calculator">
+                        <div class="project-inside">
+                            <h4>Simple Calculator</h4>
+                            <div class="project-links">
+                                <a href="https://matidn.github.io/simplecalculator/" target="_blank"><p>Visitar</p></a>
+                                <a href="https://github.com/matidn/simplecalculator" target="_blank"><p>Repositorio</p></a>
+                            </div>
+                        </div>
+                        <h3>Simple Calculator</h3>
+                    </div>
+                </div>
+                </section>
+            <section id="contact">
+                <svg class="contact-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D52D5" fill-opacity="1" d="M0,96L1440,192L1440,0L0,0Z"></path></svg>
+                <div class="contact-container">
+                    <div class="title-section">
+                        <h2>¡Contáctame!</h2>
+                        <p>Si estás buscando un desarrollador frontend apasionado y creativo, no dudes en contactarme por correo o en redes sociales.</p>
+                    </div>
+                    <div class="message-section">
+                        <form class="form" action="https://formsubmit.co/4a7d2fc288b6129777b5a17218dee6a9" method="post">
+                            <div class="name-email">
+                                <div class="name">
+                                    <label for="form-name">Nombre</label>
+                                    <input type="text" name="name" id="form-name" placeholder="" required>
+                                </div>
+                                <div class="email">
+                                    <label for="form-email">E-mail</label>
+                                    <input type="email" name="email" id="form-email" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <label for="message">Mensaje</label>
+                                <textarea type="text" name="message" id="message" class="form-text-area" required></textarea>
+                            </div>
+                            <button class="btn" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="media">
+                <a href="https://www.instagram.com/_matidn_/" target="_blank">
+                    <div class="instagram">
+                        <svg class="svg-insta" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0007 6.54545C19.2605 6.54545 18.6656 6.56618 16.8038 6.65091C14.9457 6.736 13.6774 7.03018 12.5676 7.46182C11.4196 7.90764 10.4458 8.504 9.47568 9.47455C8.5048 10.4447 7.90846 11.4185 7.4612 12.5662C7.02848 13.6764 6.73395 14.9451 6.65031 16.8025C6.56704 18.6644 6.54523 19.2596 6.54523 24C6.54523 28.7404 6.56632 29.3335 6.65068 31.1953C6.73613 33.0535 7.0303 34.3218 7.46156 35.4316C7.90773 36.5796 8.50408 37.5535 9.47459 38.5236C10.4444 39.4945 11.4182 40.0924 12.5654 40.5382C13.6759 40.9698 14.9446 41.264 16.8024 41.3491C18.6641 41.4338 19.2587 41.4545 23.9985 41.4545C28.7391 41.4545 29.3322 41.4338 31.1939 41.3491C33.0521 41.264 34.3218 40.9698 35.4324 40.5382C36.58 40.0924 37.5523 39.4945 38.5221 38.5236C39.493 37.5535 40.0893 36.5796 40.5366 35.432C40.9656 34.3218 41.2602 33.0531 41.3474 31.1956C41.4311 29.3338 41.4529 28.7404 41.4529 24C41.4529 19.2596 41.4311 18.6647 41.3474 16.8029C41.2602 14.9447 40.9656 13.6764 40.5366 12.5665C40.0893 11.4185 39.493 10.4447 38.5221 9.47455C37.5512 8.50364 36.5803 7.90727 35.4313 7.46182C34.3186 7.03018 33.0495 6.736 31.1914 6.65091C29.3296 6.56618 28.7369 6.54545 23.9952 6.54545H24.0007ZM22.4349 9.69091C22.8996 9.69018 23.4182 9.69091 24.0007 9.69091C28.6609 9.69091 29.2133 9.70764 31.0536 9.79127C32.7553 9.86909 33.6789 10.1535 34.2942 10.3924C35.1087 10.7087 35.6894 11.0869 36.3 11.6978C36.9109 12.3087 37.289 12.8905 37.6061 13.7051C37.845 14.3196 38.1297 15.2433 38.2072 16.9451C38.2908 18.7851 38.309 19.3378 38.309 23.996C38.309 28.6542 38.2908 29.2069 38.2072 31.0469C38.1294 32.7487 37.845 33.6724 37.6061 34.2869C37.2897 35.1015 36.9109 35.6815 36.3 36.292C35.6891 36.9029 35.1091 37.2811 34.2942 37.5975C33.6797 37.8375 32.7553 38.1211 31.0536 38.1989C29.2136 38.2825 28.6609 38.3007 24.0007 38.3007C19.3401 38.3007 18.7878 38.2825 16.9478 38.1989C15.2461 38.1204 14.3224 37.836 13.7068 37.5971C12.8923 37.2807 12.3105 36.9025 11.6996 36.2916C11.0887 35.6807 10.7106 35.1004 10.3935 34.2855C10.1546 33.6709 9.86985 32.7473 9.7924 31.0455C9.70877 29.2055 9.69204 28.6527 9.69204 23.9916C9.69204 19.3305 9.70877 18.7807 9.7924 16.9407C9.87022 15.2389 10.1546 14.3153 10.3935 13.7C10.7098 12.8855 11.0887 12.3036 11.6996 11.6927C12.3105 11.0818 12.8923 10.7036 13.7068 10.3865C14.3221 10.1465 15.2461 9.86291 16.9478 9.78473C18.558 9.712 19.1819 9.69018 22.4349 9.68655V9.69091ZM33.3175 12.5891C32.1612 12.5891 31.223 13.5262 31.223 14.6829C31.223 15.8393 32.1612 16.7775 33.3175 16.7775C34.4738 16.7775 35.412 15.8393 35.412 14.6829C35.412 13.5265 34.4738 12.5884 33.3175 12.5884V12.5891ZM24.0007 15.0364C19.0507 15.0364 15.0373 19.0498 15.0373 24C15.0373 28.9502 19.0507 32.9618 24.0007 32.9618C28.9507 32.9618 32.9626 28.9502 32.9626 24C32.9626 19.0498 28.9504 15.0364 24.0003 15.0364H24.0007ZM24.0007 18.1818C27.2137 18.1818 29.8187 20.7865 29.8187 24C29.8187 27.2131 27.2137 29.8182 24.0007 29.8182C20.7873 29.8182 18.1827 27.2131 18.1827 24C18.1827 20.7865 20.7873 18.1818 24.0007 18.1818V18.1818Z" fill="white"/>
+                        </svg>
+                        
+                        <span></span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/matias-de-nardo-224960246/" target="_blank">
+                    <div class="linkedin">
+                        <svg class="svg-linked" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.41333 7.00006C8.08048 7.00006 7 8.08054 7 9.41339V38.5866C7 39.9195 8.08049 41 9.41333 41H38.5867C39.9195 41 41 39.9195 41 38.5866V9.41339C41 8.08055 39.9195 7.00006 38.5867 7.00006H9.41333ZM14.6314 17.5588C16.2604 17.5588 17.5809 16.2382 17.5809 14.6093C17.5809 12.9803 16.2604 11.6598 14.6314 11.6598C13.0025 11.6598 11.6819 12.9803 11.6819 14.6093C11.6819 16.2382 13.0025 17.5588 14.6314 17.5588ZM20.2822 19.7385H25.1704V21.9779C25.1704 21.9779 26.4969 19.3249 30.1061 19.3249C33.3257 19.3249 35.9928 20.9109 35.9928 25.7453V35.9396H30.9271V26.9806C30.9271 24.1287 29.4046 23.8151 28.2444 23.8151C25.8367 23.8151 25.4245 25.8919 25.4245 27.3526V35.9396H20.2822V19.7385ZM17.2026 19.7386H12.0603V35.9396H17.2026V19.7386Z" fill="white"/>
+                        </svg>
+                            
+                        <span></span>
+                    </div>
+                </a>
+                <a href="https://github.com/matidn" target="_blank">
+                    <div class="github">
+                        <svg class="svg-github" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9983 6C14.0588 6 6 14.0588 6 24.0005C6 31.9533 11.1571 38.6993 18.3098 41.0806C19.2104 41.2453 19.5385 40.6895 19.5385 40.2121C19.5385 39.7856 19.5231 38.6529 19.5142 37.1512C14.5074 38.2386 13.4511 34.7379 13.4511 34.7379C12.6322 32.6594 11.4521 32.1058 11.4521 32.1058C9.8178 30.9886 11.5759 31.0107 11.5759 31.0107C13.3825 31.1389 14.3329 32.866 14.3329 32.866C15.9384 35.6164 18.5462 34.8219 19.5717 34.3622C19.7352 33.1986 20.1993 32.4052 20.7143 31.9555C16.7175 31.5013 12.5151 29.9565 12.5151 23.0591C12.5151 21.0944 13.2168 19.4877 14.3682 18.2291C14.1826 17.7738 13.5649 15.9439 14.5439 13.4654C14.5439 13.4654 16.0556 12.9814 19.4943 15.3108C20.9297 14.9119 22.4701 14.7119 24.0006 14.7052C25.5288 14.7119 27.0692 14.9119 28.5068 15.3108C31.9433 12.9814 33.4517 13.4654 33.4517 13.4654C34.434 15.9439 33.8163 17.7738 33.6307 18.2291C34.7843 19.4877 35.4816 21.0944 35.4816 23.0591C35.4816 29.9742 31.2726 31.4958 27.2625 31.9411C27.909 32.4969 28.4847 33.5953 28.4847 35.2749C28.4847 37.6805 28.4626 39.622 28.4626 40.2121C28.4626 40.6939 28.7863 41.2541 29.7002 41.0784C36.8474 38.6927 42 31.9511 42 24.0005C42 14.0588 33.9401 6 23.9983 6Z" fill="white"/>
+                        </svg>
+                            
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+            <p>Copyright © 2023 | Hecho por Matias De Nardo</p>
+        </footer>
+
+    </div>
+
+    <script src="https://rawgit.com/Twikito/easy-toggle-state/master/dist/easy-toggle-state.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CustomEase.min.js"
+        integrity="sha512-vJEpuxWlGFUZNeqnZUKrn17bg/eQ0nWlooxNuv5mPVW0+U6OrEpp/6meH0oJIG4tet3snWJWBjdkFJSuGKOcUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/EasePack.min.js"
+        integrity="sha512-B+WVFt+EHyZhatBEvQG6Tek+IU2rtXYpxOh3cTRGfu7/GJiwGdbhqy4/b45H6oysymSjRiPPnYFAQOhsP6PGbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.js"
+        integrity="sha512-yn9N2uBs4OocMUaJ9wZK6ELv+qXIULoRa7IvOsGz2wqWQRt8mNqU1L2I9Fau24PPxEKlGxuEDkRKvsanwAWUYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script/script.js"></script>
+</body>
+
+
+</html>

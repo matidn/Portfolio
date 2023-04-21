@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Jost:wght@100;200;300;400&family=Quicksand:wght@300;400;600&family=Righteous&family=Zilla+Slab:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Righteous', cursive;
+// font-family: 'Zilla Slab', serif;
+// font-family: 'Jost', sans-serif;
+
+$white: #ffffff;
+$black: #0a090c;
+$blue: #3D52D5;
+$lightBlue: #D9DBF1;
+$yellow: #fce762ff;
+$purple: #b49fccff;
+
+@import 'load.scss';
+@import 'home.scss';
+@import 'container-anim.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    margin: 0;
+    background-color: $blue;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos de la barra de scroll */
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+/* Estilos del "thumb" (la parte movible de la barra de scroll) */
+html::-webkit-scrollbar-thumb {
+    background-color: $white;
+    border-radius: 5px;
+    border: 2.5px solid $blue;
+}
+
+/* Estilos del "thumb" al clickearlo */
+
+html::-webkit-scrollbar-thumb:active {
+    background-color: darken($white, 25%);
+}
+
+/* Estilos del "track" (la parte fija de la barra de scroll) */
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+body {
+    background-color: $white;
+    .scroller {
+        overflow-x: hidden;
+
+        background-color: $black;
+        height: 100%;
+
+        header {
+            background-color: $black;
+
+            .navbar {
+                z-index: 101;
+                background-color: $black;
+                height: 60px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+                transform: translateY(0px);
+
+                ul {
+                    list-style: none;
+                    background-color: $black;
+
+
+                    li {
+                        display: inline-block;
+                        font-size: 14px;
+                        padding: 5px 10px;
+
+
+                        a {
+                            font-family: 'Jost', sans-serif;
+                            font-weight: 600;
+                            position: relative;
+                            color: $white;
+                            opacity: 60%;
+                            text-decoration: none;
+                            letter-spacing: 0.5px;
+                            padding: 0 5px;
+                            text-shadow: 1px 1px 20px $black;
+
+                        }
+
+                        a::after {
+                            content: "";
+                            position: absolute;
+                            background: $white;
+                            height: 2px;
+                            width: 100%;
+                            border-radius: 1px;
+                            left: 0;
+                            bottom: -4px;
+                            transform: scale(0, 1);
+                            transition: transform 0.3s ease;
+                        }
+
+                        a:hover {
+                            opacity: 100%;
+                            transition: 0.3s;
+                        }
+
+                        a:hover::after {
+                            transform: scale(1, 1);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        section {
+            position: relative;
+            width: 100vw;
+            
+            background-color: #ffffff;
+
+            .title-section {
+
+                h2{
+                    font-family: 'Jost', cursive;
+                    font-weight: 600;
+                    font-size: clamp(40px, 6vw, 60px);
+                    margin: 0;
+                }
+            }
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            color: #fff;
+            font-size: 12px;
+
+            .media {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+    
+                gap: 20px;
+    
+                a {
+                    text-decoration: none;
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 400;
+                    color: $black;
+                    gap: 10px;
+    
+    
+                    div {
+                        
+                        width: 50px;
+                        opacity: 0.4;
+                        transition: .3s;
+    
+                        svg {
+                            transform: scale(0.75);
+    
+                            path {
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+    
+                a:hover {
+    
+                    div {
+                        opacity: 1;
+    
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+    
+                        svg {
+                            #SVGRepo_iconCarrier {
+                                g {
+                                    path {
+                                        stroke: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            p{
+                opacity: 0.3;
+            }
+        }
+    }
+}
