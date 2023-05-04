@@ -1,11 +1,8 @@
-
-
 document.body.style.overflow = "clip";
 
 var toggleButton = document.getElementById("switchbox_V2VVB"); 
 
 // CONTENIDO DE ANIMACION AL SCROLLEAR HORIZONTALMENTE
-const containerAnim = document.querySelector('.container-anim');
 const eng = document.querySelector('.example-switchbox-yes');
 const esp = document.querySelector('.example-switchbox-no');
 
@@ -117,20 +114,14 @@ toggleButton.addEventListener('click', function(){
 
 function cambiarIdioma(){
     if (toggleButton.classList.contains('is-pressed')) {
-        console.log('ojooooo');
-        // eng.style.opacity = 0;
         esp.style.opacity = 1;
         location.href = "eng/";
         
     } else {
-        console.log('letsgo');
         eng.style.opacity = 1;
-        // esp.style.opacity = 0;
         location.href="../";
     };
 }
-
-
 // ANIMACION DE LOS LOGOS MEDIA 
 // const animateLeft = gsap.from(".media a", {
 //   x: "-160%",
